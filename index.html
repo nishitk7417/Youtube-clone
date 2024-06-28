@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="shortcut icon" href="Assets/yuotube-logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[rgb(15,15,15)]">
+    <div class="flex px-7 py-[0.8rem] bg-[rgb(15,15,15)] z-10 fixed top-0 gap-[17rem]">
+      <div class="flex gap-[25px] items-center relative pr-4">
+        <div class="cursor-pointer p-2 rounded-[40px] hover:bg-[rgb(48,48,48)]">
+          <svg
+          class="w-[1rem] fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+        </div>
+        <img
+          class="w-[90px] h-[20px]"
+          src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
+          alt="YouTube logo"
+        />
+        <p class="absolute right-[-53px] top-[-1px] text-xs text-white">IN</p>
+      </div>
+      <div class="flex gap-[20px]">
+        <div class="flex">
+          <input
+            class="w-[33rem] border-[1px] border-[rgb(48,48,48)] rounded-l-[50px] bg-[rgb(15,15,15)] pl-[20px]"
+            placeholder="Search"
+            type="text"
+          />
+          <svg
+            class="w-16 fill-white bg-[rgb(34,34,34)] px-[22px] py-[10px] border-[1px] border-[rgb(48,48,48)] rounded-r-[50px]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </div>
+        <svg
+          class="w-11 fill-white bg-[rgb(34,34,34)] px-[16px] rounded-[70px] cursor-pointer"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+        >
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M192 0C139 0 96 43 96 96V256c0 53 43 96 96 96s96-43 96-96V96c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H216V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 70.7-57.3 128-128 128s-128-57.3-128-128V216z"
+          />
+        </svg>
+      </div>
+      <div class="flex gap-[18px]">
+        <div class=" w-[60px] p-2 cursor-pointer rounded-[40px] hover:bg-[rgb(48,48,48)]">
+          <svg
+          class=" fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          style="
+            pointer-events: none;
+            display: inherit;
+            width: 100%;
+            height: 100%;
+          "
+          viewBox="0 0 24 24"
+          width="24"
+          focusable="false"
+        >
+          <path
+            d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"
+          ></path>
+        </svg>
+        </div>
+        <div class="w-[60px] px-2 cursor-pointer rounded-[40px] hover:bg-[rgb(48,48,48)]">
+          <svg
+          class="fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          focusable="false"
+          style="
+            pointer-events: none;
+            display: inherit;
+            width: 100%;
+            height: 100%;
+          "
+        >
+          <path
+            d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"
+          ></path>
+        </svg>
+        </div>
+        <img class="w-[38px] rounded-[60px] cursor-pointer" src="Assets/channel-logo.jpeg" alt="" />
+      </div>
+    </div>
+    <div class="flex mt-[4rem]"> 
+      <div class="  w-[90px] h-[100vh] bg-[rgb(15,15,15)] mt-1 fixed flex flex-col items-center">
+        <div class="flex flex-col items-center gap-[3px] p-4 cursor-pointer hover:bg-[rgb(48,48,48)] hover:rounded-xl">
+          <div class="w-6">
+            <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
+          </div>
+          <p class="text-white text-[.65rem]" >Home</p>
+        </div>
+        <div class="flex flex-col items-center gap-[3px] p-4 cursor-pointer hover:bg-[rgb(48,48,48)] hover:rounded-xl">
+          <div class="w-6">
+            <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+          </div>
+          <p class="text-white text-[.65rem]" >Shorts</p>
+        </div>
+        <div class="flex flex-col items-center gap-[3px] py-4 cursor-pointer hover:bg-[rgb(48,48,48)] hover:rounded-xl">
+          <div class="w-6">
+            <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+          </div>
+          <p class="text-white text-[.65rem]" >Subscriptions</p>
+        </div>
+        <div class="flex flex-col items-center gap-[3px] px-[19px] py-4 cursor-pointer hover:bg-[rgb(48,48,48)] hover:rounded-xl">
+          <div class="w-6">
+            <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+          </div>
+          <p class="text-white text-[.65rem]" >You</p>
+        </div>
+      </div>
+      <div class="w-[100vw] ml-[93px]">
+        <div class="ml-3 flex items-center z-10 fixed gap-[13px]  pb-2 bg-[rgb(15,15,15)]">
+          <span class="text-black bg-white px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px]">All</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Music</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Javascript</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Job interviews</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Tests</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Data Structures</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Al</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Git</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Gaming</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Live</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Jukebox</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Esports</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Contemporary R&B</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Playlists</span>
+          <span class="text-white bg-[rgb(39,39,39)] px-[11px] py-[.3rem] text-[15px] font-medium rounded-[6px] hover:bg-[rgb(60,60,60)]">Mixes</span>
+          <span class="ml-3 py-3 px-4 rounded-[30px] hover:bg-[rgb(39,39,39)]"><svg class="w-3 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+        </div>
+        <div class="ml-3 mr-[55px] mt-20 mb-8 z-0">
+          <div class="flex justify-between">
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/lofi.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >2:23</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/lofi-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>1 A.M Study Session [lofi hip hop/chill beats]</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Lofi Girl</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    108M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 4 years ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/P&F.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >40:22</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/P&F Profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>A birthday to remember | Phineas And Ferb | @disneyindia</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Disney India</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    41K views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 2 weeks ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/Amazon.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >2:23</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/Amazon-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Best Of Bhushan | Panchayat | Durgesh Kumar | Prime Video India</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Prime Video India</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    4.2M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 9 months ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/BMW.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >2:23</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/BMW-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>The new BMW M4 Competition</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">BMW India</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    167K views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 1 month ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between mt-10">
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/Music.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >2:23</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/Music-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Don Toliver Ft. Travis Scott - Ice Land (Music Video)</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Wise Records</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    55K views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 2 weeks ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/gow.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >54:38</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/gow-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>GOD OF WAR Kratos Kills All Gods of Olympus 4K ULTRA HD</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Shirrako</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    7.3M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 1 year ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/carti.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >3:30</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/carry-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>"2024" prod. ojivolta, earlonthebeat, and Kanye West</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Playboi Carti</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    48M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 6 months ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/football.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >12:10</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/football-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Guess The Player, Buy Them</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">More Chuff</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    529K views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 2 days ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between mt-10">
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/carry.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >2:43:28</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="/Assets/carry-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>YEH KAISE BANDHAN HAI?? -NO PROMOTION</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">CarryisLive</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    838K views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 7 days ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/lil-uzi.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >3:42</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/lil-uzi-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>The Way Life Goes (feat. Oh Wonder)</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">LIL UZI VERT</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    56M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 6 years ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/dancin.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >4:17</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/dancin-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Aaron Smith - Dancin (KRONO Remix) (Espanol)</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Wild Youth Subs</p>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    216M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 5 years ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/Sedhe-maut.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >6:06</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/seedhe-maut-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Seedhe Maut - TT / Shutdown</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Seedhe Maut</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    1M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 2 days ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between mt-10">
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/Purav-jha.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >17:07</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/Purav-jha-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Youtuber's House party | Purav Jha</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Purav Jha</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    6.1M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 4 months ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/raina.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >43:25</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/raina-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>INDIA'S GOT LATENT | EP 01 ft. @raftaarmusic</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Samay Raina</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    4M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 2 weeks ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/einstein.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >37:03</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/einstein-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Something Strange Happens When You Follow Einstein's Math</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Veritasium</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    10M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 1 months ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/tanmay.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >2:23</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/tanmay-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>INDIA'S WEIRDEST STREET FOOD 2 ft. @ZakirKhan</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Tanmay Bhat</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    5.5M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 1 year ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between mt-10">
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/money.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >2:23</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/money-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>How To Build Walth From Nothing</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Iman Gadzhi</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    169K views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 2 days ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/Breaking-bad.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >20:27</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/Breaking-bad-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Walter White's 5 Most Badass Moves | Breaking Bad</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Disney India</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    2M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 7 months ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/harsh.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >29:49</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="Assets/harsh-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>School picnic | School Diaries 2.0 | Harsh Beniwal</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Harsh Beniwal</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    39M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 4 years ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+            <div class="w-[20.2rem] cursor-pointer ">
+              <div class="relative">
+                <img class="rounded-[13px]" src="Assets/sea.webp" alt="">
+                <div class="absolute text-white text-[13px] right-[8px] bottom-[7px] opacity-80 bg-black px-1 rounded-[4px]" >49:48</div>
+              </div>
+              <div class="flex justify-between mt-2 pr-[4px]">
+                <span><img class="w-9 rounded-[20px]" src="/Assets/sea-profile.jpg" alt=""></span>
+                <span class="text-white w-[20rem] pl-2 font-medium leading-5"><p>Our Planet | Coastal Seas | FULL EPISODE | Netflix</p>
+                  <span class="flex items-center gap-1 mt-1">
+                    <p class="text-[rgb(170,170,170)] font-medium text-[14px]">Netflix</p>
+                    <span><svg class="w-3 fill-[rgb(170,170,170)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></span>
+                  </span>
+                  <span class="flex items-center text-[14px] text-[rgb(170,170,170)] font-medium">
+                    28M views <span class="w-1 h-1 rounded mx-[5px] bg-white"></span> 4 years ago
+                  </span>
+                </span>
+                <span><svg class="fill-white w-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
